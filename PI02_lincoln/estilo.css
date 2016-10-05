@@ -1,0 +1,298 @@
+/*estilo CSS*/
+*body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+
+#header{
+
+	margin: 0px 0px;
+    position: absolute;
+    left: 0px;
+    bottom: 860px;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #385965;
+
+}
+
+
+
+
+#menu{
+
+	position: relative;
+	width: 200px;
+	height: 100%;
+	left:0px;
+	top:30px;
+	/*background-color: #385965; */
+
+
+}
+
+	
+
+#imgmenu{
+	
+  position: absolute;
+  height: auto;
+  width: 250px;
+  left: -30px;  
+  top: 5px;
+}
+
+/*
+#menu li{
+
+	text-transform: uppercase;
+	list-style: none;
+	position:relative;
+	height: auto;	
+	left: 0px;
+	top: 280px;
+	margin: 10px 10px; 
+	padding: 12px 10px;
+	/*border-radius: 5px; */
+	
+/*}*/
+
+/*#menu li a { 
+	color: #ccc;
+	text-decoration: none;
+}*/
+
+
+
+/* text-transform: uppercase;
+    position: relative;
+    height: 50px;
+    left: 0px;
+    top: 280px;
+    margin: 5px 0px;
+    padding: 12px 10px;
+    border-radius: 5px;*/
+	
+#section{
+
+	position: absolute;
+	width: 80%;
+	height: 110%;	
+	left: 230px;
+	top: 80px;
+	background-color: #B7C3C0;
+
+}
+
+    /*position: absolute;
+    width: 1680px;
+    height: 90%;
+    left: 230px;
+    top: 80px;
+    background-color: #B7C3C0;*/
+
+#section #menuprincipal{
+	width: 1000px;
+	height: 100%;
+	margin-left: 200px;
+	margin-top:60px;
+	background-color: #fff;
+	border: 2px solid;
+    border-radius: 10px;
+	float: left;
+	position:absolute;
+	
+}
+
+#menuprincipal #txtmenu{
+	float: left;
+	background-color: #fff;
+	width: 985px;
+	height: 80px;
+	margin-top: 5px;
+	margin-left: 5px;
+	
+}
+
+
+
+/*----------------------------MENU PRINCIPAL-----------------------*/
+
+.men{
+    display: inline;
+	margin-left: 200px;
+	margin-left:150px;
+	
+}
+
+ul {
+	padding:0px;
+	margin:0px;
+	background-color:#B7C3C0;
+	list-style:none;
+	
+}
+
+ul li a {
+	padding: 2px 10px;
+	display: inline-block;
+ 
+	/* visual do link */
+	background-color:#EDEDED;
+	color: #333;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+}
+
+ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+	border-bottom:3px solid #EA0000;
+}
+
+
+/*--------------------Form da página Editar--------------------------*/
+#form1{
+	
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+	margin-top: 10%;
+}
+
+	
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+	
+	
+
+
+
+
+
+#footer{
+
+	position: static;
+	background-color: #385965;
+	width: 100%;
+	height: 100px;
+	bottom: -10px;
+	margin-top: 1000px;
+	margin-left:-7px;
+	
+
+}
+
+/*------------------------------Login Usuario------------------------------*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border: 3px solid #385965; /*------------------coloca borda no form do login--------------------*/
+  margin-top:20%;
+  
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  /*background: #f2f2f2;*/
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button { /*--------------------------------------------Luiz, alterar a cor do login para o azul padrao da página aqui----------------------------------*/
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #385965;  /*<<------Aqui----------*/
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #385965;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #385965;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
