@@ -1,39 +1,24 @@
 <?php
-
 			$erro = $config = array(); 
 			// Prepara a variável do arquivo
-
 			$arquivo = isset($_FILES["foto"]) ? $_FILES["foto"] : FALSE; 
-
 			// Tamanho máximo do arquivo (em bytes) 
-
 			$config["tamanho"] = 106883; 
-
 			// Largura máxima (pixels)
-
 			$config["largura"] = 350; 
-
-
 			// Altura máxima (pixels) 
-
 			$config["altura"] = 180; 
-
-
 		
 		if($arquivo) { 
-
 		// Verifica se o mime-type do arquivo é de imagem 
-
 		if(!eregi("^image\/(pjpeg|jpeg|png|gif|bmp)$", $arquivo["type"])) { 
 			$erro[] = "Arquivo em formato inválido! A imagem deve ser jpg, jpeg, bmp, gif ou png. Envie outro arquivo"; 
 			
 		}else{
-
 		// Verifica tamanho do arquivo 
 		
 		if($arquivo["size"] > $config["tamanho"]){ 
 			$erro[] = "Arquivo em tamanho muito grande! A imagem deve ser de no máximo " . $config["tamanho"] . " bytes. Envie outro arquivo"; }
-
 		// Para verificar as dimensões da imagem 
 		
 		$tamanhos = getimagesize($arquivo["tmp_name"]); 
@@ -72,7 +57,6 @@
 		preg_match("/\.(gif|bmp|png|jpg|jpeg){1}$/i", $arquivo["name"], $ext); 
 		
 		// Gera um nome único para a imagem
-
 		$imagem_nome = md5(uniqid(time())) . "." . $ext[1]; 
 		
 		// Caminho de onde a imagem ficará 
@@ -88,5 +72,3 @@
 		} 
 		
 		?>
-
-	
