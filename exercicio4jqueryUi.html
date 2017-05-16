@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div id="dialogo" title="Exemplo de Dialogo">
+	<p>Teste do Dialogo.</p>
+</div>
+
+<div id="dialogo2" title="Exemplo de Dialogo">
+	<p>Teste do Modal.</p>
+</div>
+
+<script>
+
+$( "#dialogo" ).dialog( );
+$( "#dialogo2" ).dialog({modal: true });
+
+</script>
+
+</body>
+</html>

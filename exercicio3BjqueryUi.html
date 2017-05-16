@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<p>Desabilite as datas depois de um mês da data atual.</p>
+<input type="button" id="b" value="calendário"/>
+
+<script>
+ 
+//$("#b").datepicker("show");
+// Getter
+var maxDate = $("#b").datepicker("option","maxDate");
+ 
+// Setter
+$("#b").datepicker("option","maxDate","+1m +1w");
+
+<!--Caso eu queira que esse fique com a mesma cara em outros browser??-->
+
+</script>
+
+</body>
+</html>
